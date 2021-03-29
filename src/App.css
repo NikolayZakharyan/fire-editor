@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+
+
+.addSection {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 70%;
+  border: 1px solid red;
+  padding: 10px;
+  /* height: 400px; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+input  {
+  margin-left: 8px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.child-inp {
+  margin-bottom: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.empty {
+  border: 1px solid red;
+}
+
+.title {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* height: 10px; */
+  /* margin: 30px; */
 }
 
-.App-link {
-  color: #61dafb;
+.submit-data {
+  height: 30px;
+  background-color:red;
+  border-color:white;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+.example_f {
+  border-radius: 4px;
+  background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px;
+  width: 10px;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 5px;
+}
+.example_f span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+.example_f span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.example_f:hover span {
+  padding-right: 25px;
+}
+.example_f:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.read-data {
+  margin: 80px;
+}
+
+
+li {
+  /* background: rgb(216, 216, 216); */
+  border: 1px solid red;
+  padding: 10px;
+}
+
+ul {
+  /* background: red; */
+
+}
+
+.data-read-items {
+  border: 1px solid blue;
+  display: flex;
+
+}
+
+.read-item {
+  border: 1px solid green;
+
+  /* width: 50%; */
+  padding: 10px;
+}
+.del-btn {
+  margin-left: 100px;
 }
